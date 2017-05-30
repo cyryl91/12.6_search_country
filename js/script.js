@@ -1,8 +1,8 @@
-$(function() { //jquery begin
+$(function() {
 var url = 'https://restcountries.eu/rest/v1/name/';
 var countriesList = $('#countries');
 
-$('#search').click(searchCountries);  //albo na koncu
+$('#search').click(searchCountries);
 
 function searchCountries() {
   	var countryName = $('#country-name').val();
@@ -21,7 +21,10 @@ function showCountriesList(resp) {
   			 .appendTo(countriesList);
   	$('<li>').text(item.population)
   			 .appendTo(countriesList);
-   		//Here is the code that will execute on each successive item in the collection. A single item is hidden under an item variable.
+  	$('<li>').text(item.currencies)
+  			 .appendTo(countriesList);
+  	$('<li>').text(item.timezones)
+  			 .appendTo(countriesList);
 });
 }
 
@@ -30,4 +33,4 @@ function showCountriesList(resp) {
 
 
 
-});  //jquery end
+});

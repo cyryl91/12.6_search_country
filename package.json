@@ -1,0 +1,15 @@
+{
+  "name": "kodilla_12.6",
+  "version": "1.0.0",
+  "description": "task country search",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-task"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "domaslawski",
+  "license": "ISC"
+}

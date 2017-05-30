@@ -8,25 +8,33 @@
 <body>
 <div class="container">
 	<h1>Country search engine</h1>
-		<button id="search" class="btn btn-primary">Search a country</button>
-		<input id="country-name" type="text" />
+		<div class="row">
+			<div class="col-md-12 main-block">
+				<input id="country-name" type="text" />
+				<button id="search" class="btn btn-warning">Search a country</button>
+			</div>
+		</div>
 	<h2>List of countries</h2>
-	<div class="row">
-		<div class="col-md-3 col-md-offset-3">
-			<ul>
-				<li>name</li>
-	  			<li>capitol</li>
-	  			<li>population</li>
-			</ul>
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3">
+				<ul>
+					<li>name</li>
+		  			<li>capitol</li>
+		  			<li>population</li>
+		  			<li>currencies</li>
+		  			<li>time zone</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul id="countries">
+					<li>...</li>
+		  			<li>...</li>
+		  			<li>...</li>
+		  			<li>...</li>
+		  			<li>...</li>
+				</ul>
+			</div>
 		</div>
-		<div class="col-md-3">
-			<ul id="countries">
-				<li>...</li>
-	  			<li>...</li>
-	  			<li>...</li>
-			</ul>
-		</div>
-	</div>
 </div>
 
 
